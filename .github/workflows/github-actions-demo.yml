@@ -1,11 +1,12 @@
 name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: workflow_dispatch:
-  inputs:
-    print_tags:
-      description: 'True to print to STDOUT'
-      required: true
-      type: boolean
+on:
+  workflow_dispatch:
+    inputs:
+      print_tags:
+        description: 'True to print to STDOUT'
+        required: true
+        type: boolean
 
 jobs:
   Explore-GitHub-Actions:
